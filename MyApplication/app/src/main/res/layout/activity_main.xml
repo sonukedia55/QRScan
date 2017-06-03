@@ -9,8 +9,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.qrscan.MainActivity">
 
-    <TextView
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showqr"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="#dbdbdb"
+        android:padding="10dp"
+        android:layout_margin="10dp" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Scan Now"
+        android:id="@+id/qr_scan"
+        android:layout_below="@+id/showqr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="99dp" />
 </RelativeLayout>
