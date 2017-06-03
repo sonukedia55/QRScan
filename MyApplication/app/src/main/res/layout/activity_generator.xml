@@ -7,40 +7,47 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.qrscan.MainActivity">
-
+    tools:context="com.example.qrscan.Generator">
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:gravity="center">
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your QR code"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/showqr"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="38dp"
-            android:background="#dbdbdb"
+            android:hint="Enter the text"
             android:padding="10dp"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            android:id="@+id/qr_text" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Scan Now"
-            android:id="@+id/qr_scan"
-            android:layout_below="@+id/showqr"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="99dp" />
+            android:text="Create"
+            android:id="@+id/gen" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gen"
-            android:id="@+id/button2"
-            android:onClick="toGen" />
+            android:text="Scan"
+            android:id="@+id/button"
+            android:onClick="toScan" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image"/>
+        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>

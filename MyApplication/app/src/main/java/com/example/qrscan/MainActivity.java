@@ -56,4 +56,7 @@ public class MainActivity extends AppCompatActivity {
             super.onActivityResult(requestCode, resultCode, data);
         }
     }
+    public void toGen(View view){
+        startActivity(new Intent(this,Generator.class));
+    }
 }
